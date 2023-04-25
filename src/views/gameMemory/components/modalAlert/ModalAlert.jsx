@@ -7,6 +7,7 @@ import winner from "../../../../assets/sound/winner.mp3";
 
 const ModalAlert = () => {
   const { errors, hits } = useSelector((store) => store.memoryGame);
+  const { userName } = useSelector((store) => store.login);
 
   const handleReset = () => {
     window.location.reload();
@@ -39,7 +40,8 @@ const ModalAlert = () => {
           {hits === 20 && (
             <>
               <img className="cupWinner" src={cup} alt="" />
-              <span className="winner">WINNER</span>
+              <span className="userName">{userName}</span>
+              <span className="winner">Congratulations you have Succeeded</span>
               <button className="resetGame" onClick={handleReset}>
                 RESET GAME
               </button>

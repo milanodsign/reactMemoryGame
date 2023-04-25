@@ -44,7 +44,8 @@
   border-radius: 10px;
   z-index: 3;
 }
-.gameOver, .winner {
+.gameOver,
+.winner {
   font-family: "Press Start 2P", cursive;
   font-size: 6rem;
   font-weight: 900;
@@ -54,6 +55,22 @@
   text-shadow: var(--primary-color) 5px 5px 0px;
   color: var(--black);
 }
+.winner {
+  font-size: 3rem;
+  line-height: 1.5;
+  width: 70%;
+}
+span.userName {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1;
+  transform: rotateY(180deg);
+  text-shadow: var(--primary-color) 5px 5px 0px;
+  color: var(--black);
+  margin-bottom: 3rem;
+}
 button.resetGame {
   transform: rotateY(180deg);
   margin-top: 3rem;
@@ -62,6 +79,6 @@ button.resetGame {
   letter-spacing: 10px;
 }
 img.cupWinner {
-    width: 200px;
-    margin-bottom: 4rem;
+  width: 200px;
+  margin-bottom: 4rem;
 }
