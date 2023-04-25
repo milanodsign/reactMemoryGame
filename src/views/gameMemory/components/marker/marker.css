@@ -1,0 +1,61 @@
+@import url('https://fonts.cdnfonts.com/css/alarm-clock');
+.markerCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 60%;
+  box-shadow: 0 0px 5rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+.markerGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+.markerGame > div:first-child {
+    border-right: solid var(--primary-color);
+}
+.hitsGame,
+.errorsGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+span.titleMarker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+span.total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 30px);
+  font-family: 'alarm clock', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.resetGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+.resetGame > button {
+  border-radius: 0px 0px 4px 4px;
+}
